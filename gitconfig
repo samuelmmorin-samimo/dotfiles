@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = samuelmmorin.samimo@gmail.com
-	name = samuel m.-morin
+	name = Samuel Michaud-Morin
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
